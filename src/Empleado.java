@@ -91,6 +91,12 @@ public class Empleado {
         this.genero = genero;
     }
 
+    public void imprimirDetallesBase() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Salario: " + salarioBase);
+        System.out.println("Horas trabajadas: " + horasTrabajadas);
+        System.out.println("Departamento: " + departamento);
+    }
     // Más metodos
 }
 
