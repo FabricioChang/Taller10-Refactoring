@@ -1,18 +1,17 @@
 public class EmpleadoTemporario extends Empleado {
     private String nombre;
-    private String genero;
     private double salarioBase;
     private int horasTrabajadas;
     private String departamento;
     private int mesesContrato;
 
     public EmpleadoTemporario(String nombre, double salarioBase, int horasTrabajadas, String departamento, int mesesContrato, String genero) {
+        super(nombre, salarioBase, horasTrabajadas, 0, departamento,genero);
         this.nombre = nombre;
         this.salarioBase = salarioBase;
         this.horasTrabajadas = horasTrabajadas;
         this.departamento = departamento;
         this.mesesContrato = mesesContrato;
-        this.genero = genero;
     }
 
     public void imprimirDetalles() {
